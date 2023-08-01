@@ -21,6 +21,7 @@ public class GamePanel extends JPanel implements ActionListener {
     char direction = 'R';
     boolean running = false;
     Timer timer;
+    Timer timer2;
     Random random;
 
     GamePanel() {
@@ -201,6 +202,8 @@ public class GamePanel extends JPanel implements ActionListener {
         g.drawString("Score: " + applesEaten,
                 (SCREEN_WIDTH - metrics2.stringWidth("Score: " + applesEaten)) / 2,
                 g.getFont().getSize());
+        // timer = new Timer();
+        // timer.schedule(new RemindTask(), seconds*1000);
 
     }
 
